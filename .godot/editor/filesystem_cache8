@@ -1,0 +1,8 @@
+2a60927148abd1d33b818b535e306557
+::res://::1689578554
+AJR - Wow, I'm Not Crazy (Official Audio).mp3::AudioStreamMP3::2593488317861733225::1689574194::1689574195::1::::<><>::
+default_bus_layout.tres::AudioBusLayout::8072661941195675252::1689578533::0::1::::<><>::
+icon.png::CompressedTexture2D::747027143570406321::1674446926::1689573733::1::::<><>::
+maldita.ogg::AudioStreamOggVorbis::8879413260598864850::1674446926::1689573711::1::::<><>::
+show_spectrum.gd::GDScript::-1::1689577313::0::1::::<>Node2D<>::
+show_spectrum.tscn::PackedScene::280548693456438773::1689578550::0::1::::<><>::res://show_spectrum.gd
