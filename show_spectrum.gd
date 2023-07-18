@@ -49,7 +49,6 @@ func _draw():
 	draw_rect(Rect2(0, HEIGHT - height + HEIGHT, 50, height), Color.WHITE)
 
 	if height > 300:
-		print("KICK")
 		get_parent().get_parent().get_node("Lights/Side").visible = true
 	else:
 		get_parent().get_parent().get_node("Lights/Side").visible = false		
@@ -71,4 +70,13 @@ func _draw():
 	energy = clamp((MIN_DB + linear_to_db(magnitude)) / MIN_DB, 0, 1)
 	height = energy * HEIGHT	
 	draw_rect(Rect2(200, HEIGHT - height + HEIGHT, 50, height), Color.WHITE)
+	
+	magnitude = spectrum.get_magnitude_for_frequency_range(20, 20000).length()
+	energy = clamp((MIN_DB + linear_to_db(magnitude)) / MIN_DB, 0, 1)
+	height = energy * HEIGHT	
+	draw_rect(Rect2(300, HEIGHT - height + HEIGHT, 50, height), Color.WHITE)
+	
+	
+	if height > 350:
+		get_parent().get_parent().get_node("Lights/Top").change()
 	

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dx2aywur1ow0d"
+path="res://.godot/imported/Wow, I'm Not Crazy test.mp3-8213adc742d71b3af818a1d0fa1e096e.mp3str"
+
+[deps]
+
+source_file="res://Wow, I'm Not Crazy test.mp3"
+dest_files=["res://.godot/imported/Wow, I'm Not Crazy test.mp3-8213adc742d71b3af818a1d0fa1e096e.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
