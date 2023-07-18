@@ -1,12 +1,14 @@
 2a60927148abd1d33b818b535e306557
-::res://::1689641239
-default_bus_layout.tres::AudioBusLayout::8072661941195675252::1689635365::0::1::::<><>::
-icon.png::CompressedTexture2D::747027143570406321::1689582105::1689582105::1::::<><>::
-light.glb::PackedScene::1656079039016605787::1689641634::1689641636::1::::<><>::
-node_3d.tscn::PackedScene::7085683419206189881::1689638705::0::1::::<><>::res://show_spectrum.gd<>uid://cg11db0qy14yf
-Metal.tres::StandardMaterial3D::677826193642612173::1689635676::0::1::::<><>::
-Light.tscn::PackedScene::5230052873815870::1689641239::0::1::::<><>::uid://xuhm6ckmo7sh
-rig.tscn::PackedScene::6251194206059715761::1689638691::0::1::::<><>::uid://cg11db0qy14yf<>uid://jwlx0lbgr8ab
-rig.glb::PackedScene::5249232341917148985::1689635347::1689635364::1::::<><>::
-show_spectrum.gd::GDScript::-1::1689634000::0::1::::<>Node2D<>::
-show_spectrum.tscn::PackedScene::280548693456438773::1689638690::0::1::::<><>::res://show_spectrum.gd
+::res://::1689672450
+AJR - Wow, I'm Not Crazy (Official Audio).test.mp3::AudioStreamMP3::2634885845458484443::1689580652::1689580740::1::::<><>::
+default_bus_layout.tres::AudioBusLayout::8072661941195675252::1689672056::0::1::::<><>::
+icon.png::CompressedTexture2D::747027143570406321::1674446926::1689573733::1::::<><>::
+light.glb::PackedScene::1656079039016605787::1689657355::1689657355::1::::<><>::
+Light.tscn::PackedScene::5230052873815870::1689657355::0::1::::<><>::uid://xuhm6ckmo7sh
+Metal.tres::StandardMaterial3D::677826193642612173::1689657355::0::1::::<><>::
+node_3d.tscn::PackedScene::7085683419206189881::1689672205::0::1::::<><>::res://show_spectrum.gd<>uid://bdsmgj028l4gt<>uid://cvceixc4adbo0<>uid://csex1cusgig
+rig.glb::PackedScene::5249232341917148985::1689657355::1689657355::1::::<><>::
+rig.tscn::PackedScene::6251194206059715761::1689657355::0::1::::<><>::uid://cg11db0qy14yf<>uid://jwlx0lbgr8ab
+show_spectrum.gd::GDScript::-1::1689657355::0::1::::<>Node2D<>::
+show_spectrum.tscn::PackedScene::280548693456438773::1689672205::0::1::::<><>::res://show_spectrum.gd
+Wow, I'm Not Crazy.test.mp3::AudioStreamMP3::8039559197643349644::1689672451::1689672456::1::::<><>::

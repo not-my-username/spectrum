@@ -50,6 +50,9 @@ func _draw():
 
 	if height > 300:
 		print("KICK")
+		get_parent().get_parent().get_node("Lights/Side").visible = true
+	else:
+		get_parent().get_parent().get_node("Lights/Side").visible = false		
 
 #	get_parent().get_parent().get_node("Cube").scale = Vector3(height/150, height/150, height/150)
 	

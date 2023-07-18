@@ -4,6 +4,6 @@
 resource_name = "SpectrumAnalyzer"
 
 [resource]
-bus/0/volume_db = -0.130497
+bus/0/volume_db = 1.06049
 bus/0/effect/0/effect = SubResource("1")
 bus/0/effect/0/enabled = true
