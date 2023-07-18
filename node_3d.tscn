@@ -1,0 +1,73 @@
+[gd_scene load_steps=9 format=3 uid="uid://c77mf2kr4q4gj"]
+
+[ext_resource type="Script" path="res://show_spectrum.gd" id="1_7jtwd"]
+[ext_resource type="PackedScene" uid="uid://cvceixc4adbo0" path="res://rig.tscn" id="3_fxffi"]
+[ext_resource type="PackedScene" uid="uid://csex1cusgig" path="res://Light.tscn" id="4_4g2uy"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jv164"]
+emission_enabled = true
+emission = Color(1, 1, 1, 1)
+emission_energy_multiplier = 3.52
+
+[sub_resource type="BoxMesh" id="BoxMesh_d44pg"]
+material = SubResource("StandardMaterial3D_jv164")
+
+[sub_resource type="AudioStreamMicrophone" id="AudioStreamMicrophone_12qo4"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_2tat3"]
+
+[sub_resource type="Environment" id="Environment_oo75t"]
+background_mode = 1
+background_color = Color(0.564706, 0.564706, 0.564706, 1)
+volumetric_fog_enabled = true
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Cube" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.707107, -0.707107, 0, 0.5, 0.5, -0.707107, 0.5, 0.5, 0.707107, 0, 1.90722, -2.70495)
+mesh = SubResource("BoxMesh_d44pg")
+skeleton = NodePath("../Camera3D")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.990295, -0.138983, 0, 0.138983, 0.990295, 0, 1.30061, 12.3166)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Node2D" type="Node2D" parent="CanvasLayer"]
+script = ExtResource("1_7jtwd")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="CanvasLayer/Node2D"]
+stream = SubResource("AudioStreamMicrophone_12qo4")
+autoplay = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(25.6484, 0, 0, 0, 0.193515, 0, 0, 0, 24.9421, 0, -0.0761464, 0)
+mesh = SubResource("BoxMesh_2tat3")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="."]
+transform = Transform3D(48.6334, 0, 0, 0, 0.192913, 0, 0, 0, 47.2307, 0, 17.4578, 0)
+mesh = SubResource("BoxMesh_2tat3")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
+transform = Transform3D(77.9578, 0, 0, 0, -8.45881e-09, -32.2001, 0, 0.193515, -1.40751e-06, 0, 7.81054, -11.5887)
+mesh = SubResource("BoxMesh_2tat3")
+
+[node name="Lights" type="Node3D" parent="."]
+
+[node name="SpotLight3D" type="SpotLight3D" parent="Lights"]
+transform = Transform3D(1, 0, 0, 0, -0.699376, 0.714754, 0, -0.714754, -0.699376, 0.152515, 5.5245, 1.29892)
+light_color = Color(0, 0.741176, 1, 1)
+light_energy = 13.274
+spot_range = 23.453
+spot_attenuation = 1e-05
+spot_angle = 8.38
+spot_angle_attenuation = 0.466518
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_oo75t")
+
+[node name="rig" parent="." instance=ExtResource("3_fxffi")]
+transform = Transform3D(0.29, 0, 0, 0, 0.29, 0, 0, 0, 0.29, -5.45696, 0, -5.5271)
+
+[node name="light" parent="." instance=ExtResource("4_4g2uy")]
+transform = Transform3D(3.9563e-09, 3.9563e-09, 0.128, 0.0905097, -0.0905097, 0, 0.0905097, 0.0905097, -5.59506e-09, 0.13369, 5.58288, 1.23024)

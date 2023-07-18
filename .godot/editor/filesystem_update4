@@ -1,3 +1,7 @@
 res://default_bus_layout.tres
+res://node_3d.tscn
 res://show_spectrum.tscn
+res://rig.tscn
+res://Metal.tres
+res://Light.tscn
 res://show_spectrum.gd

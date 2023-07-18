@@ -1,1 +1,9 @@
+SpotLight3D
+Node3D
+WorldEnvironment
+MeshInstance3D
+VoxelGI
+CanvasLayer
+Camera3D
+Node2D
 AudioStreamPlayer
