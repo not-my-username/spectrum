@@ -209,6 +209,7 @@ var all_colors = [
 0xffff14ff,
 ]
 var rng = RandomNumberGenerator.new()
+var color 
 func _ready():
 	pass
 
@@ -219,6 +220,11 @@ func _process(delta):
 	
 func change():
 	for N in self.get_children():
-		var random = rng.randi_range(0, 205)
-		print(random)
-		N.light_color = Color.hex(all_colors[rng.randi_range(0, 205)])
+		color = all_colors[rng.randi_range(0, 205)]
+		print(all_colors[rng.randi_range(0, 205)])
+		print(color)
+		N.light_color = Color.hex(color)
+		print(color)		
+		N.get_children()[0].light_color = Color.hex(color)
+		print(color)
+		print()		

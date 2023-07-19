@@ -12,7 +12,7 @@ const HEIGHT = 500
 const MIN_DB = 60
 
 var spectrum
-
+var has_changed_top = false
 
 func _ready():
 	spectrum = AudioServer.get_bus_effect_instance(0,0)
@@ -28,13 +28,13 @@ func _draw():
 	#warning-ignore:integer_division
 	var w = WIDTH / VU_COUNT_LARGE
 	var prev_hz = 0
-	for i in range(1, VU_COUNT_LARGE+1):
-		var hz = i * FREQ_MAX / VU_COUNT_LARGE;
-		var magnitude: float = spectrum.get_magnitude_for_frequency_range(prev_hz, hz).length()
-		var energy = clamp((MIN_DB + linear_to_db(magnitude)) / MIN_DB, 0, 1)
-		var height = energy * HEIGHT
-		draw_rect(Rect2(w * i, HEIGHT - height, w, height), Color.WHITE)
-		prev_hz = hz
+#	for i in range(1, VU_COUNT_LARGE+1):
+#		var hz = i * FREQ_MAX / VU_COUNT_LARGE;
+#		var magnitude: float = spectrum.get_magnitude_for_frequency_range(prev_hz, hz).length()
+#		var energy = clamp((MIN_DB + linear_to_db(magnitude)) / MIN_DB, 0, 1)
+#		var height = energy * HEIGHT
+#		draw_rect(Rect2(w * i, HEIGHT - height, w, height), Color.WHITE)
+#		prev_hz = hz
 	
 #	for i in range(1, VU_COUNT_SMALL+1):
 #		var hz = i * FREQ_MAX / VU_COUNT_SMALL;
@@ -78,5 +78,9 @@ func _draw():
 	
 	
 	if height > 350:
-		get_parent().get_parent().get_node("Lights/Top").change()
+		if not has_changed_top:
+			get_parent().get_parent().get_node("Lights/Top").change()
+			has_changed_top = true
+	else:
+		has_changed_top = false
 	
