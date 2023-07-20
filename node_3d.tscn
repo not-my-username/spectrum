@@ -39,7 +39,6 @@ emission = Color(1, 1, 1, 1)
 background_mode = 1
 background_color = Color(0.0313726, 0.0313726, 0.0313726, 1)
 background_energy_multiplier = 1.39
-sdfgi_enabled = true
 glow_enabled = true
 glow_bloom = 0.39
 glow_blend_mode = 0
@@ -138,7 +137,7 @@ omni_range = 0.114678
 
 [node name="SpotLight3D4" type="SpotLight3D" parent="Lights/Top"]
 transform = Transform3D(0.935943, 0.251702, 0.246287, 1.01211e-08, -0.699376, 0.714754, 0.352152, -0.668969, -0.654576, -4.29717, 5.4186, 1.17654)
-light_color = Color(0.705882, 0, 0.870588, 1)
+light_color = Color(0, 0, 0, 1)
 light_energy = 4.059
 spot_range = 23.453
 spot_attenuation = 1e-05
@@ -205,6 +204,7 @@ skeleton = NodePath("../Side")
 surface_material_override/0 = SubResource("StandardMaterial3D_75m64")
 
 [node name="Side" type="Node3D" parent="Lights"]
+visible = false
 
 [node name="SpotLight3D8" type="SpotLight3D" parent="Lights/Side"]
 transform = Transform3D(1, 0, 0, 0, -0.999996, 0.00265357, 0, -0.00265357, -0.999996, -5.46266, 1.74336, 1.17654)

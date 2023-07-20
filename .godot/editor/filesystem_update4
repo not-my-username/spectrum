@@ -3,3 +3,5 @@ res://node_3d.tscn
 res://show_spectrum.tscn
 res://rig.tscn
 res://Light.tscn
+res://Top.gd
+res://show_spectrum.gd
