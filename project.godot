@@ -27,6 +27,7 @@ window/size/viewport_height=1080
 
 [rendering]
 
+environment/volumetric_fog/volume_depth=128
 quality/driver/driver_name="GLES2"
 vram_compression/import_etc=true
 vram_compression/import_etc2=false

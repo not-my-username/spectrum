@@ -76,14 +76,14 @@ func _draw():
 	height = energy * HEIGHT	
 	draw_rect(Rect2(300, HEIGHT - height + HEIGHT, 50, height), Color.WHITE)
 	
-	
-	if height > 300:
-#		if not has_changed_top:
-		get_parent().get_parent().get_node("Lights/Top").change()
-		has_changed_top = true
-	elif height < 300:
-		get_parent().get_parent().get_node("Lights/Top").visible = false
-	else:
-		has_changed_top = false
+#
+#	if height > 300:
+##		if not has_changed_top:
+#		get_parent().get_parent().get_node("Lights/Top Down").change()
+#		has_changed_top = true
+#	elif height < 300:
+#		get_parent().get_parent().get_node("Lights/Top Down").visible = false
+#	else:
+#		has_changed_top = false
 		
 	

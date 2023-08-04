@@ -220,13 +220,8 @@ func _process(delta):
 	
 func change():
 	self.visible = true
+	color = all_colors[rng.randi_range(0, 205)]
 	for N in self.get_children():
-		color = all_colors[rng.randi_range(0, 205)]
-		print(all_colors[rng.randi_range(0, 205)])
-		print(color)
-		N.light_color = Color.hex(color)
-		print(color)		
+		N.light_color = Color.hex(color)	
 		N.get_children()[0].light_color = Color.hex(color)
-		print(color)
-		print()
 
