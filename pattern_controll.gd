@@ -22,7 +22,8 @@ var patterns = {
 					"animation_type":"linear",
 					"animation":{
 						"frequency":"sub_low",
-						"effects":"brightness"
+						"effects":"brightness",
+						"min":20.0
 					},
 				}
 			]
@@ -63,13 +64,15 @@ func _process(delta):
 			if set.lights == "_all":
 				for N in get_node("Colored").get_children():
 					for n in N.get_children():
-						n.light_energy = height / 200
+						var light_colour = max(remap_range(height, 0, 500, 0, 2),remap_range(set.animation.min, 0, 255, 0, 2))
+						print(light_colour)
+						n.light_energy = light_colour
 						n.light_color = debug_color
-						n.get_children()[0].light_energy = height / 90
+						n.get_children()[0].light_energy = light_colour
 						n.get_children()[0].light_color = debug_color
 			if height > 300:
-				print("CH|3|"+str(min(int(height),255)))
-				qlcWebSocket.send_text("CH|3|"+str(min(int(height),255)))
+#				print("CH|3|"+str(min(int(height),255)))
+				qlcWebSocket.send_text("CH|3|"+str(int(remap_range(height, 0, 500, 0, 255))))
 			else:
 				qlcWebSocket.send_text("CH|3|0")
 #			if height > 300:
@@ -81,4 +84,5 @@ func _process(delta):
 #				N.light_energy = height / 200
 #				N.get_children()[0].light_energy = height / 90
 	
-	
+func remap_range(value, InputA, InputB, OutputA, OutputB):
+	return(value - InputA) / (InputB - InputA) * (OutputB - OutputA) + OutputA
