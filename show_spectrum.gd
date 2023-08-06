@@ -17,7 +17,7 @@ var has_changed_top = false
 func _ready():
 	spectrum = AudioServer.get_bus_effect_instance(0,0)
 	print(AudioServer.get_input_device_list())
-	AudioServer.set_input_device("BlackHole 2ch (58)")
+#	AudioServer.set_input_device("BlackHole 2ch (58)")
 	print(AudioServer.get_input_device())
 
 func _process(_delta):

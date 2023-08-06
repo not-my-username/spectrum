@@ -13,7 +13,7 @@ config_version=5
 config/name="Audio Spectrum Demo"
 config/description="This is a demo showing how a spectrum analyzer can be built using Godot."
 run/main_scene="res://show_spectrum.tscn"
-config/features=PackedStringArray("4.0")
+config/features=PackedStringArray("4.1")
 config/icon="res://icon.png"
 
 [audio]

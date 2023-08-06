@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://cvmleet7gtv3x"]
+
+[ext_resource type="Script" path="res://art-net-test.gd" id="1_eojx6"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_eojx6")
