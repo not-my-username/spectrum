@@ -16,3 +16,6 @@ data_*/
 *.test.mp3.import
 *.test.wav
 *.test.wav.import
+.DS_Store
+
+node_modules
