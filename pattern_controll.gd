@@ -74,16 +74,17 @@ func _process(delta):
 						n.light_color = debug_color
 						n.get_children()[0].light_energy = light_colour
 						n.get_children()[0].light_color = debug_color
-			print("0|"+str(int(remap_range(height, 0, 500, 0, 255))))
-			socket.send_text("0|"+str(int(remap_range(height, 0, 500, 0, 255))))
+			if height > 300:
+				
+				print("0|"+str(int(remap_range(height, 0, 500, 0, 255))))
+				socket.send_text("0|255")
+			else:
+				socket.send_text("0|0")				
 						
 #			for N in get_node("Top Down").get_children():
 #				print(N)
 #				N.light_energy = height / 200
 #				N.get_children()[0].light_energy = height / 90
 	
-func remap_range(value, InputA, InputB, OutputA, OutputB):
-	return(value - InputA) / (InputB - InputA) * (OutputB - OutputA) + OutputA
-
 func remap_range(value, InputA, InputB, OutputA, OutputB):
 	return(value - InputA) / (InputB - InputA) * (OutputB - OutputA) + OutputA
