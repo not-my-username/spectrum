@@ -48,10 +48,10 @@ func _draw():
 	var height = energy * HEIGHT	
 	draw_rect(Rect2(0, HEIGHT - height + HEIGHT, 50, height), Color.WHITE)
 
-	if height > 300:
-		get_parent().get_parent().get_node("Lights/Side").visible = true
-	else:
-		get_parent().get_parent().get_node("Lights/Side").visible = false		
+#	if height > 300:
+#		get_parent().get_parent().get_node("Lights/Side").visible = true
+#	else:
+#		get_parent().get_parent().get_node("Lights/Side").visible = false		
 
 #	get_parent().get_parent().get_node("Cube").scale = Vector3(height/150, height/150, height/150)
 	

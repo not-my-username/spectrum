@@ -18,9 +18,11 @@ material_override = ExtResource("2_cmkty")
 material_override = ExtResource("2_cmkty")
 
 [node name="Cube009" parent="." index="4"]
+transform = Transform3D(1, 0, 0, 0, 0, -1, 0, 1, 0, 0, -28.2392, 21.7116)
 material_override = ExtResource("2_cmkty")
 
 [node name="Cube010" parent="." index="5"]
+transform = Transform3D(1, 0, 0, 0, 0, -1, 0, 1, 0, 37.8203, -28.2392, 21.7116)
 material_override = ExtResource("2_cmkty")
 
 [node name="Cube011" parent="." index="6"]

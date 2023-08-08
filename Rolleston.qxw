@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE Workspace>
-<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="VirtualConsole">
+<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="FixtureManager">
  <Creator>
   <Name>Q Light Controller Plus</Name>
   <Version>4.12.7</Version>
@@ -17,113 +17,75 @@
   </InputOutputMap>
   <Fixture>
    <Manufacturer>Generic</Manufacturer>
-   <Model>Generic RGBW</Model>
-   <Mode>RGBW</Mode>
+   <Model>Generic</Model>
+   <Mode>6 Channel</Mode>
    <ID>0</ID>
-   <Name>Generic RGBW</Name>
+   <Name>Dimmers</Name>
    <Universe>0</Universe>
    <Address>0</Address>
-   <Channels>4</Channels>
+   <Channels>6</Channels>
   </Fixture>
   <Fixture>
    <Manufacturer>Generic</Manufacturer>
-   <Model>Generic RGBW</Model>
-   <Mode>RGBW</Mode>
-   <ID>1</ID>
-   <Name>Generic RGBW</Name>
-   <Universe>0</Universe>
-   <Address>4</Address>
-   <Channels>4</Channels>
-  </Fixture>
-  <Fixture>
-   <Manufacturer>Generic</Manufacturer>
-   <Model>Generic RGBW</Model>
-   <Mode>RGBW</Mode>
+   <Model>Generic</Model>
+   <Mode>6 Channel</Mode>
    <ID>2</ID>
-   <Name>Generic RGBW</Name>
-   <Universe>0</Universe>
-   <Address>8</Address>
-   <Channels>4</Channels>
-  </Fixture>
-  <Fixture>
-   <Manufacturer>Generic</Manufacturer>
-   <Model>Generic RGBW</Model>
-   <Mode>RGBW</Mode>
-   <ID>3</ID>
-   <Name>Generic RGBW</Name>
+   <Name>Dimmers</Name>
    <Universe>0</Universe>
    <Address>12</Address>
-   <Channels>4</Channels>
+   <Channels>6</Channels>
   </Fixture>
   <Fixture>
    <Manufacturer>Generic</Manufacturer>
-   <Model>Generic RGBW</Model>
-   <Mode>RGBW</Mode>
+   <Model>Generic</Model>
+   <Mode>6 Channel</Mode>
+   <ID>3</ID>
+   <Name>Dimmers</Name>
+   <Universe>0</Universe>
+   <Address>18</Address>
+   <Channels>6</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>6 Channel</Mode>
    <ID>4</ID>
-   <Name>Generic RGBW</Name>
-   <Universe>0</Universe>
-   <Address>16</Address>
-   <Channels>4</Channels>
-  </Fixture>
-  <Fixture>
-   <Manufacturer>Generic</Manufacturer>
-   <Model>Generic RGBW</Model>
-   <Mode>RGBW</Mode>
-   <ID>5</ID>
-   <Name>Generic RGBW</Name>
-   <Universe>0</Universe>
-   <Address>20</Address>
-   <Channels>4</Channels>
-  </Fixture>
-  <Fixture>
-   <Manufacturer>Generic</Manufacturer>
-   <Model>Generic RGBW</Model>
-   <Mode>RGBW</Mode>
-   <ID>6</ID>
-   <Name>Generic RGBW</Name>
+   <Name>Dimmers</Name>
    <Universe>0</Universe>
    <Address>24</Address>
-   <Channels>4</Channels>
+   <Channels>6</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>6 Channel</Mode>
+   <ID>5</ID>
+   <Name>Dimmers</Name>
+   <Universe>0</Universe>
+   <Address>30</Address>
+   <Channels>6</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>6 Channel</Mode>
+   <ID>7</ID>
+   <Name>Dimmers</Name>
+   <Universe>0</Universe>
+   <Address>6</Address>
+   <Channels>6</Channels>
   </Fixture>
   <Function ID="3" Type="Scene" Name="Generic RGBW - Color - Red scene">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="0">0,255</FixtureVal>
-   <FixtureVal ID="1">0,255</FixtureVal>
-   <FixtureVal ID="2">0,255</FixtureVal>
-   <FixtureVal ID="3">0,255</FixtureVal>
-   <FixtureVal ID="4">0,255</FixtureVal>
-   <FixtureVal ID="5">0,255</FixtureVal>
-   <FixtureVal ID="6">0,255</FixtureVal>
   </Function>
   <Function ID="4" Type="Scene" Name="Generic RGBW - Color - Green scene">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="0">1,255</FixtureVal>
-   <FixtureVal ID="1">1,255</FixtureVal>
-   <FixtureVal ID="2">1,255</FixtureVal>
-   <FixtureVal ID="3">1,255</FixtureVal>
-   <FixtureVal ID="4">1,255</FixtureVal>
-   <FixtureVal ID="5">1,255</FixtureVal>
-   <FixtureVal ID="6">1,255</FixtureVal>
   </Function>
   <Function ID="5" Type="Scene" Name="Generic RGBW - Color - Blue scene">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="0">2,255</FixtureVal>
-   <FixtureVal ID="1">2,255</FixtureVal>
-   <FixtureVal ID="2">2,255</FixtureVal>
-   <FixtureVal ID="3">2,255</FixtureVal>
-   <FixtureVal ID="4">2,255</FixtureVal>
-   <FixtureVal ID="5">2,255</FixtureVal>
-   <FixtureVal ID="6">2,255</FixtureVal>
   </Function>
   <Function ID="6" Type="Scene" Name="Generic RGBW - Color - White scene">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="0">3,255</FixtureVal>
-   <FixtureVal ID="1">3,255</FixtureVal>
-   <FixtureVal ID="2">3,255</FixtureVal>
-   <FixtureVal ID="3">3,255</FixtureVal>
-   <FixtureVal ID="4">3,255</FixtureVal>
-   <FixtureVal ID="5">3,255</FixtureVal>
-   <FixtureVal ID="6">3,255</FixtureVal>
   </Function>
   <Function ID="7" Type="Chaser" Name="Primary colours chaser - Generic RGBW">
    <Speed FadeIn="3000" FadeOut="0" Duration="10000"/>
@@ -152,7 +114,7 @@
     <Font>Default</Font>
    </Appearance>
    <Slider Caption="Global White" ID="0" WidgetStyle="Slider" InvertedAppearance="false">
-    <WindowState Visible="True" X="180" Y="55" Width="60" Height="200"/>
+    <WindowState Visible="False" X="240" Y="55" Width="60" Height="200"/>
     <Appearance>
      <FrameStyle>Sunken</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -162,20 +124,18 @@
     </Appearance>
     <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
     <Level LowLimit="0" HighLimit="255" Value="0">
-     <Channel Fixture="0">3</Channel>
-     <Channel Fixture="1">3</Channel>
-     <Channel Fixture="2">3</Channel>
-     <Channel Fixture="3">3</Channel>
-     <Channel Fixture="4">3</Channel>
-     <Channel Fixture="5">3</Channel>
-     <Channel Fixture="6">3</Channel>
+     <Channel Fixture="0">4</Channel>
+     <Channel Fixture="2">4</Channel>
+     <Channel Fixture="3">4</Channel>
+     <Channel Fixture="4">4</Channel>
+     <Channel Fixture="5">4</Channel>
     </Level>
     <Playback>
      <Function>4294967295</Function>
     </Playback>
    </Slider>
    <Slider Caption="Global Red" ID="1" WidgetStyle="Slider" InvertedAppearance="false">
-    <WindowState Visible="True" X="0" Y="55" Width="60" Height="200"/>
+    <WindowState Visible="False" X="0" Y="55" Width="60" Height="200"/>
     <Appearance>
      <FrameStyle>Sunken</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -186,19 +146,17 @@
     <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
     <Level LowLimit="0" HighLimit="255" Value="0">
      <Channel Fixture="0">0</Channel>
-     <Channel Fixture="1">0</Channel>
      <Channel Fixture="2">0</Channel>
      <Channel Fixture="3">0</Channel>
      <Channel Fixture="4">0</Channel>
      <Channel Fixture="5">0</Channel>
-     <Channel Fixture="6">0</Channel>
     </Level>
     <Playback>
      <Function>4294967295</Function>
     </Playback>
    </Slider>
    <Slider Caption="Global Green" ID="2" WidgetStyle="Slider" InvertedAppearance="false">
-    <WindowState Visible="True" X="60" Y="55" Width="60" Height="200"/>
+    <WindowState Visible="False" X="60" Y="55" Width="60" Height="200"/>
     <Appearance>
      <FrameStyle>Sunken</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -209,19 +167,17 @@
     <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
     <Level LowLimit="0" HighLimit="255" Value="0">
      <Channel Fixture="0">1</Channel>
-     <Channel Fixture="1">1</Channel>
      <Channel Fixture="2">1</Channel>
      <Channel Fixture="3">1</Channel>
      <Channel Fixture="4">1</Channel>
      <Channel Fixture="5">1</Channel>
-     <Channel Fixture="6">1</Channel>
     </Level>
     <Playback>
      <Function>4294967295</Function>
     </Playback>
    </Slider>
    <Slider Caption="Global Blue" ID="3" WidgetStyle="Slider" InvertedAppearance="false">
-    <WindowState Visible="True" X="120" Y="55" Width="60" Height="200"/>
+    <WindowState Visible="False" X="120" Y="55" Width="60" Height="200"/>
     <Appearance>
      <FrameStyle>Sunken</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -232,19 +188,17 @@
     <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
     <Level LowLimit="0" HighLimit="255" Value="0">
      <Channel Fixture="0">2</Channel>
-     <Channel Fixture="1">2</Channel>
      <Channel Fixture="2">2</Channel>
      <Channel Fixture="3">2</Channel>
      <Channel Fixture="4">2</Channel>
      <Channel Fixture="5">2</Channel>
-     <Channel Fixture="6">2</Channel>
     </Level>
     <Playback>
      <Function>4294967295</Function>
     </Playback>
    </Slider>
    <Button Caption="RED" ID="4" Icon="">
-    <WindowState Visible="True" X="0" Y="0" Width="60" Height="55"/>
+    <WindowState Visible="False" X="0" Y="0" Width="60" Height="55"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -258,7 +212,7 @@
     <Intensity Adjust="False">100</Intensity>
    </Button>
    <Button Caption="GREEN" ID="12" Icon="">
-    <WindowState Visible="True" X="60" Y="0" Width="60" Height="55"/>
+    <WindowState Visible="False" X="60" Y="0" Width="60" Height="55"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -272,7 +226,7 @@
     <Intensity Adjust="False">100</Intensity>
    </Button>
    <Button Caption="BLUE" ID="13" Icon="">
-    <WindowState Visible="True" X="120" Y="0" Width="60" Height="55"/>
+    <WindowState Visible="False" X="120" Y="0" Width="60" Height="55"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -286,7 +240,7 @@
     <Intensity Adjust="False">100</Intensity>
    </Button>
    <Button Caption="WHITE" ID="14" Icon="">
-    <WindowState Visible="True" X="180" Y="0" Width="60" Height="55"/>
+    <WindowState Visible="False" X="240" Y="0" Width="60" Height="55"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -300,7 +254,7 @@
     <Intensity Adjust="False">100</Intensity>
    </Button>
    <Button Caption="BLACK" ID="15" Icon="">
-    <WindowState Visible="True" X="240" Y="0" Width="60" Height="55"/>
+    <WindowState Visible="False" X="470" Y="0" Width="60" Height="55"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -313,6 +267,74 @@
     <Key>K</Key>
     <Intensity Adjust="False">100</Intensity>
    </Button>
+   <Button Caption="Button 5" ID="5" Icon="">
+    <WindowState Visible="False" X="180" Y="0" Width="60" Height="55"/>
+    <Appearance>
+     <FrameStyle>None</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Function ID="4294967295"/>
+    <Action>Toggle</Action>
+    <Intensity Adjust="False">100</Intensity>
+   </Button>
+   <Button Caption="Button 6" ID="6" Icon="">
+    <WindowState Visible="False" X="410" Y="0" Width="60" Height="55"/>
+    <Appearance>
+     <FrameStyle>None</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Function ID="4294967295"/>
+    <Action>Toggle</Action>
+    <Intensity Adjust="False">100</Intensity>
+   </Button>
+   <Slider Caption="Global Yellow" ID="7" WidgetStyle="Slider" InvertedAppearance="false">
+    <WindowState Visible="False" X="180" Y="55" Width="60" Height="200"/>
+    <Appearance>
+     <FrameStyle>Sunken</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>4294966016</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
+    <Level LowLimit="0" HighLimit="255" Value="0">
+     <Channel Fixture="0">3</Channel>
+     <Channel Fixture="2">3</Channel>
+     <Channel Fixture="3">3</Channel>
+     <Channel Fixture="4">3</Channel>
+     <Channel Fixture="5">3</Channel>
+    </Level>
+    <Playback>
+     <Function>4294967295</Function>
+    </Playback>
+   </Slider>
+   <Slider Caption="Global Purple" ID="8" WidgetStyle="Slider" InvertedAppearance="false">
+    <WindowState Visible="False" X="300" Y="55" Width="60" Height="200"/>
+    <Appearance>
+     <FrameStyle>Sunken</FrameStyle>
+     <ForegroundColor>4278190080</ForegroundColor>
+     <BackgroundColor>4287898002</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
+    <Level LowLimit="0" HighLimit="255" Value="255">
+     <Channel Fixture="0">5</Channel>
+     <Channel Fixture="2">5</Channel>
+     <Channel Fixture="3">5</Channel>
+     <Channel Fixture="4">5</Channel>
+     <Channel Fixture="5">5</Channel>
+    </Level>
+    <Playback>
+     <Function>4294967295</Function>
+    </Playback>
+   </Slider>
   </Frame>
   <Properties>
    <Size Width="1920" Height="1080"/>
