@@ -1,9 +1,9 @@
-HTTPRequest
 Node3D
-DirectionalLight3D
-OmniLight3D
-FogVolume
 SpotLight3D
+OmniLight3D
+HTTPRequest
+DirectionalLight3D
+FogVolume
 MeshInstance3D
 WorldEnvironment
 VoxelGI

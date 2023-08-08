@@ -55,7 +55,7 @@ func _ready():
 #		N.light_color = Color.CORNFLOWER_BLUE
 #		N.get_children()[0].light_energy = 0
 #		N.get_children()[0].light_color = Color.CORNFLOWER_BLUE
-		
+
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	socket.poll()
@@ -65,21 +65,20 @@ func _process(delta):
 			var magnitude: float = spectrum.get_magnitude_for_frequency_range(cfr[0], cfr[1]).length()
 			var energy = clamp((MIN_DB + linear_to_db(magnitude)) / MIN_DB, 0, 1)
 			var height = energy * HEIGHT
+			var light_colour = max(remap_range(height, 0, 500, 0, 2),remap_range(set.animation.min, 0, 255, 0, 2))
+			if height > 300:
+				print("0|"+str(int(remap_range(height, 0, 500, 0, 255))))
+				socket.send_text("0|255")
+				light_colour = 5
+			else:
+				socket.send_text("0|0")
 			if set.lights == "_all":
-				for N in get_node("Colored").get_children():
+				for N in self.get_children():
 					for n in N.get_children():
-						var light_colour = max(remap_range(height, 0, 500, 0, 2),remap_range(set.animation.min, 0, 255, 0, 2))
 						print(light_colour)
 						n.light_energy = light_colour
 						n.light_color = debug_color
-						n.get_children()[0].light_energy = light_colour
-						n.get_children()[0].light_color = debug_color
-			if height > 300:
-				
-				print("0|"+str(int(remap_range(height, 0, 500, 0, 255))))
-				socket.send_text("0|255")
-			else:
-				socket.send_text("0|0")				
+					
 						
 #			for N in get_node("Top Down").get_children():
 #				print(N)
