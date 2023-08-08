@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE Workspace>
-<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="VirtualConsole">
+<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="InputOutputManager">
  <Creator>
   <Name>Q Light Controller Plus</Name>
   <Version>4.12.7</Version>
-  <Author>Liam Sherwin</Author>
+  <Author></Author>
  </Creator>
  <Engine>
   <InputOutputMap>
@@ -152,7 +152,7 @@
     <Font>Default</Font>
    </Appearance>
    <Slider Caption="Global White" ID="0" WidgetStyle="Slider" InvertedAppearance="false">
-    <WindowState Visible="True" X="180" Y="55" Width="60" Height="200"/>
+    <WindowState Visible="False" X="180" Y="55" Width="60" Height="200"/>
     <Appearance>
      <FrameStyle>Sunken</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -175,7 +175,7 @@
     </Playback>
    </Slider>
    <Slider Caption="Global Red" ID="1" WidgetStyle="Slider" InvertedAppearance="false">
-    <WindowState Visible="True" X="0" Y="55" Width="60" Height="200"/>
+    <WindowState Visible="False" X="0" Y="55" Width="60" Height="200"/>
     <Appearance>
      <FrameStyle>Sunken</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -183,6 +183,7 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
+    <Input Universe="0" Channel="7"/>
     <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
     <Level LowLimit="0" HighLimit="255" Value="0">
      <Channel Fixture="0">0</Channel>
@@ -198,7 +199,7 @@
     </Playback>
    </Slider>
    <Slider Caption="Global Green" ID="2" WidgetStyle="Slider" InvertedAppearance="false">
-    <WindowState Visible="True" X="60" Y="55" Width="60" Height="200"/>
+    <WindowState Visible="False" X="60" Y="55" Width="60" Height="200"/>
     <Appearance>
      <FrameStyle>Sunken</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -206,6 +207,7 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
+    <Input Universe="0" Channel="7"/>
     <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
     <Level LowLimit="0" HighLimit="255" Value="0">
      <Channel Fixture="0">1</Channel>
@@ -221,7 +223,7 @@
     </Playback>
    </Slider>
    <Slider Caption="Global Blue" ID="3" WidgetStyle="Slider" InvertedAppearance="false">
-    <WindowState Visible="True" X="120" Y="55" Width="60" Height="200"/>
+    <WindowState Visible="False" X="120" Y="55" Width="60" Height="200"/>
     <Appearance>
      <FrameStyle>Sunken</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -244,7 +246,7 @@
     </Playback>
    </Slider>
    <Button Caption="RED" ID="4" Icon="">
-    <WindowState Visible="True" X="0" Y="0" Width="60" Height="55"/>
+    <WindowState Visible="False" X="0" Y="0" Width="60" Height="55"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -256,9 +258,10 @@
     <Action>Flash</Action>
     <Key>R</Key>
     <Intensity Adjust="False">100</Intensity>
+    <Input Universe="0" Channel="181"/>
    </Button>
    <Button Caption="GREEN" ID="12" Icon="">
-    <WindowState Visible="True" X="60" Y="0" Width="60" Height="55"/>
+    <WindowState Visible="False" X="60" Y="0" Width="60" Height="55"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -272,7 +275,7 @@
     <Intensity Adjust="False">100</Intensity>
    </Button>
    <Button Caption="BLUE" ID="13" Icon="">
-    <WindowState Visible="True" X="120" Y="0" Width="60" Height="55"/>
+    <WindowState Visible="False" X="120" Y="0" Width="60" Height="55"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -286,7 +289,7 @@
     <Intensity Adjust="False">100</Intensity>
    </Button>
    <Button Caption="WHITE" ID="14" Icon="">
-    <WindowState Visible="True" X="180" Y="0" Width="60" Height="55"/>
+    <WindowState Visible="False" X="180" Y="0" Width="60" Height="55"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -300,7 +303,7 @@
     <Intensity Adjust="False">100</Intensity>
    </Button>
    <Button Caption="BLACK" ID="15" Icon="">
-    <WindowState Visible="True" X="240" Y="0" Width="60" Height="55"/>
+    <WindowState Visible="False" X="240" Y="0" Width="60" Height="55"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>

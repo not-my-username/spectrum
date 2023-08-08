@@ -1,5 +1,6 @@
-[gd_scene load_steps=17 format=3 uid="uid://c77mf2kr4q4gj"]
+[gd_scene load_steps=18 format=3 uid="uid://c77mf2kr4q4gj"]
 
+[ext_resource type="Script" path="res://Camera3D.gd" id="1_01vm5"]
 [ext_resource type="Script" path="res://show_spectrum.gd" id="1_7jtwd"]
 [ext_resource type="AudioStream" uid="uid://24v0n2rixwt3" path="res://test.mp3" id="2_45yid"]
 [ext_resource type="PackedScene" uid="uid://cvceixc4adbo0" path="res://rig.tscn" id="3_fxffi"]
@@ -53,6 +54,7 @@ skeleton = NodePath("../Camera3D")
 [node name="Camera3D" type="Camera3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 0.989313, 0.145807, 0, -0.145807, 0.989313, 0, 2.13885, 11.761)
 fov = 95.8
+script = ExtResource("1_01vm5")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
