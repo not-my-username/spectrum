@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://c77mf2kr4q4gj"]
+[gd_scene load_steps=15 format=3 uid="uid://c77mf2kr4q4gj"]
 
 [ext_resource type="Script" path="res://Camera3D.gd" id="1_01vm5"]
 [ext_resource type="Script" path="res://show_spectrum.gd" id="1_7jtwd"]
@@ -12,14 +12,24 @@
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6ba3i"]
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dst2t"]
+albedo_color = Color(0.572549, 0.572549, 0.572549, 1)
+
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ybjq1"]
+albedo_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jvh8u"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ve41j"]
+albedo_color = Color(0, 0, 0, 1)
 
 [sub_resource type="Environment" id="Environment_pfmir"]
 background_mode = 1
+sdfgi_enabled = true
+sdfgi_use_occlusion = true
+glow_bloom = 1.0
 volumetric_fog_enabled = true
-volumetric_fog_density = 0.0341
+volumetric_fog_density = 0.0817
 adjustment_enabled = true
 
 [node name="Node3D" type="Node3D"]
@@ -186,17 +196,6 @@ surface_material_override/0 = SubResource("StandardMaterial3D_6ba3i")
 [node name="Lights" type="Node3D" parent="."]
 script = ExtResource("3_sy65t")
 
-[node name="Middle" type="Node3D" parent="Lights"]
-
-[node name="SpotLight3D" type="SpotLight3D" parent="Lights/Middle"]
-transform = Transform3D(1, 0, 0, 0, 0.533216, 0.845979, 0, -0.845979, 0.533216, 0, 6.86462, 3.50767)
-light_color = Color(1, 0, 0, 1)
-light_energy = 6.674
-shadow_enabled = true
-spot_range = 11.8794
-spot_angle = 17.369
-spot_angle_attenuation = 1.31951
-
 [node name="Back" type="Node3D" parent="Lights"]
 
 [node name="SpotLight3D2" type="SpotLight3D" parent="Lights/Back"]
@@ -210,6 +209,17 @@ spot_angle_attenuation = 1.31951
 
 [node name="SpotLight3D3" type="SpotLight3D" parent="Lights/Back"]
 transform = Transform3D(1.31134e-07, 0.805804, -0.592182, 0, 0.592182, 0.805804, 1, -1.05668e-07, 7.76553e-08, -7.88168, 6.86462, -1.63526)
+light_color = Color(1, 0, 0, 1)
+light_energy = 6.674
+shadow_enabled = true
+spot_range = 11.8794
+spot_angle = 17.369
+spot_angle_attenuation = 1.31951
+
+[node name="Middle" type="Node3D" parent="Lights"]
+
+[node name="SpotLight3D" type="SpotLight3D" parent="Lights/Middle"]
+transform = Transform3D(1, 0, 0, 0, 0.533216, 0.845979, 0, -0.845979, 0.533216, 0, 6.86462, 3.50767)
 light_color = Color(1, 0, 0, 1)
 light_energy = 6.674
 shadow_enabled = true
@@ -348,7 +358,7 @@ transform = Transform3D(-4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0, 1, 10.213
 transform = Transform3D(48.1425, 0, 0, 0, 0.193515, 0, 0, 0, 52.0852, 0.0923901, -0.0608062, -0.083024)
 mesh = SubResource("BoxMesh_2tat3")
 skeleton = NodePath("../..")
-surface_material_override/0 = SubResource("StandardMaterial3D_6ba3i")
+surface_material_override/0 = SubResource("StandardMaterial3D_dst2t")
 
 [node name="MeshInstance3D3" type="MeshInstance3D" parent="Room"]
 transform = Transform3D(105.646, 0, 0, 0, 0.192913, 0, 0, 0, 116.322, 0.25632, 8.60905, -33.9058)
@@ -361,6 +371,30 @@ transform = Transform3D(-4.61793e-06, -0.192913, 0, 105.646, -8.43249e-09, 0, 0,
 mesh = SubResource("BoxMesh_2tat3")
 skeleton = NodePath("../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_ybjq1")
+
+[node name="MeshInstance3D7" type="MeshInstance3D" parent="Room"]
+transform = Transform3D(1.27382e-14, 8.43249e-09, 2.61588, 6.66681, -8.43249e-09, 0, -2.91415e-07, -0.192913, 1.14344e-07, -6.87598, 3.79932, -0.380209)
+mesh = SubResource("BoxMesh_2tat3")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_ybjq1")
+
+[node name="MeshInstance3D8" type="MeshInstance3D" parent="Room"]
+transform = Transform3D(1.27382e-14, 8.43249e-09, 2.61588, 6.66681, -8.43249e-09, 0, -2.91415e-07, -0.192913, 1.14344e-07, 6.79979, 3.79932, -0.380209)
+mesh = SubResource("BoxMesh_2tat3")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_ybjq1")
+
+[node name="MeshInstance3D9" type="MeshInstance3D" parent="Room"]
+transform = Transform3D(4.85051e-16, 8.43249e-09, 5.32267, 0.253862, -8.43249e-09, 0, -1.10967e-08, -0.192913, 2.32661e-07, -0.00644946, 5.89713, -4.67459)
+mesh = SubResource("BoxMesh_2tat3")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_ybjq1")
+
+[node name="MeshInstance3D10" type="MeshInstance3D" parent="Room"]
+transform = Transform3D(6.05347e-15, 4.25081e-09, 5.32267, 3.16822, -4.25081e-09, 0, -1.38487e-07, -0.0972473, 2.32661e-07, -0.00644946, 4.23331, -4.67459)
+mesh = SubResource("BoxMesh_2tat3")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_jvh8u")
 
 [node name="MeshInstance3D5" type="MeshInstance3D" parent="Room"]
 transform = Transform3D(-4.61793e-06, -0.192913, 0, 105.646, -8.43249e-09, 0, 0, 0, 116.322, 10.0783, 8.60905, -33.9058)
@@ -495,9 +529,6 @@ script = ExtResource("1_7jtwd")
 stream = ExtResource("2_45yid")
 autoplay = true
 
-[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
-environment = SubResource("Environment_pfmir")
-
 [node name="Light Mesh" type="Node3D" parent="."]
 transform = Transform3D(3.9563e-09, 3.9563e-09, 0.128, 0.0905097, -0.0905097, 0, 0.0905097, 0.0905097, -5.59506e-09, 0.0990267, 5.48835, 1.1214)
 
@@ -560,6 +591,18 @@ transform = Transform3D(0.168093, -0.96857, -0.183333, 0.9335, 0.216159, -0.2860
 
 [node name="light6" parent="Light Mesh" instance=ExtResource("4_4g2uy")]
 transform = Transform3D(0.183531, -0.965781, -0.18325, 0.943049, 0.225596, -0.244467, 0.277442, -0.127946, 0.952184, 21.7065, 4.85945, 51.9678)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0469856, 2.67172, 0.0401599)
+light_color = Color(1, 0, 0, 1)
+shadow_enabled = true
+shadow_opacity = 0.45
+shadow_blur = 10.0
+omni_range = 12.7667
+omni_attenuation = 1.68179
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_pfmir")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(-0.55227, -0.180406, 0.813912, -0.163464, 0.980787, 0.106478, -0.817483, -0.0742402, -0.571148, 0, 0.939589, 0)

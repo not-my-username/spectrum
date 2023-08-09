@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE Workspace>
-<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="VirtualConsole">
+<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="SimpleDesk">
  <Creator>
   <Name>Q Light Controller Plus</Name>
   <Version>4.12.7</Version>
-  <Author>Liam Sherwin</Author>
+  <Author>Liam</Author>
  </Creator>
  <Engine>
   <InputOutputMap>
@@ -147,26 +147,26 @@
     <Font>Default</Font>
    </Appearance>
    <Button Caption="YELLOW" ID="5" Icon="">
-    <WindowState Visible="True" X="255" Y="0" Width="85" Height="55"/>
+    <WindowState Visible="False" X="255" Y="0" Width="85" Height="55"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
      <BackgroundColor>Default</BackgroundColor>
      <BackgroundImage>None</BackgroundImage>
-     <Font>Seven Segment,18,-1,5,50,0,0,0,0,0,Regular</Font>
+     <Font>Seven Segment,18,-1,5,50,0,0,0,0,0</Font>
     </Appearance>
     <Function ID="4294967295"/>
     <Action>Toggle</Action>
     <Intensity Adjust="False">100</Intensity>
    </Button>
    <Button Caption="WHITE" ID="14" Icon="">
-    <WindowState Visible="True" X="340" Y="0" Width="85" Height="55"/>
+    <WindowState Visible="False" X="340" Y="0" Width="85" Height="55"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
      <BackgroundColor>Default</BackgroundColor>
      <BackgroundImage>None</BackgroundImage>
-     <Font>Seven Segment,18,-1,5,50,0,0,0,0,0,Regular</Font>
+     <Font>Seven Segment,18,-1,5,50,0,0,0,0,0</Font>
     </Appearance>
     <Function ID="6"/>
     <Action>Toggle</Action>
@@ -174,20 +174,20 @@
     <Intensity Adjust="False">100</Intensity>
    </Button>
    <Button Caption="PURPLE" ID="6" Icon="">
-    <WindowState Visible="True" X="425" Y="0" Width="85" Height="55"/>
+    <WindowState Visible="False" X="425" Y="0" Width="85" Height="55"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
      <BackgroundColor>Default</BackgroundColor>
      <BackgroundImage>None</BackgroundImage>
-     <Font>Seven Segment,18,-1,5,50,0,0,0,0,0,Regular</Font>
+     <Font>Seven Segment,18,-1,5,50,0,0,0,0,0</Font>
     </Appearance>
     <Function ID="4294967295"/>
     <Action>Toggle</Action>
     <Intensity Adjust="False">100</Intensity>
    </Button>
-   <Slider Caption="Global Red" ID="1" WidgetStyle="Slider" InvertedAppearance="false">
-    <WindowState Visible="True" X="0" Y="55" Width="85" Height="200"/>
+   <Slider Caption="Red" ID="1" WidgetStyle="Slider" InvertedAppearance="false">
+    <WindowState Visible="False" X="0" Y="55" Width="85" Height="200"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>4278190080</ForegroundColor>
@@ -209,8 +209,8 @@
      <Function>4294967295</Function>
     </Playback>
    </Slider>
-   <Slider Caption="Global Green" ID="2" WidgetStyle="Slider" InvertedAppearance="false">
-    <WindowState Visible="True" X="170" Y="55" Width="85" Height="200"/>
+   <Slider Caption="Green" ID="2" WidgetStyle="Slider" InvertedAppearance="false">
+    <WindowState Visible="False" X="85" Y="55" Width="85" Height="200"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>4278190080</ForegroundColor>
@@ -232,8 +232,8 @@
      <Function>4294967295</Function>
     </Playback>
    </Slider>
-   <Slider Caption="Global Blue" ID="3" WidgetStyle="Slider" InvertedAppearance="false">
-    <WindowState Visible="True" X="85" Y="55" Width="85" Height="200"/>
+   <Slider Caption="Blue" ID="3" WidgetStyle="Slider" InvertedAppearance="false">
+    <WindowState Visible="False" X="170" Y="55" Width="85" Height="200"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>4278190080</ForegroundColor>
@@ -255,26 +255,26 @@
     </Playback>
    </Slider>
    <Button Caption="RED" ID="4" Icon="">
-    <WindowState Visible="True" X="0" Y="0" Width="85" Height="55"/>
+    <WindowState Visible="False" X="0" Y="0" Width="85" Height="55"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
      <BackgroundColor>Default</BackgroundColor>
      <BackgroundImage>None</BackgroundImage>
-     <Font>Seven Segment,18,-1,5,50,0,0,0,0,0,Regular</Font>
+     <Font>Seven Segment,18,-1,5,50,0,0,0,0,0</Font>
     </Appearance>
     <Function ID="3"/>
     <Action>Toggle</Action>
     <Intensity Adjust="False">100</Intensity>
    </Button>
    <Button Caption="GREEN" ID="12" Icon="">
-    <WindowState Visible="True" X="170" Y="0" Width="85" Height="55"/>
+    <WindowState Visible="False" X="85" Y="0" Width="85" Height="55"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
      <BackgroundColor>Default</BackgroundColor>
      <BackgroundImage>None</BackgroundImage>
-     <Font>Seven Segment,18,-1,5,50,0,0,0,0,0,Regular</Font>
+     <Font>Seven Segment,18,-1,5,50,0,0,0,0,0</Font>
     </Appearance>
     <Function ID="4"/>
     <Action>Toggle</Action>
@@ -282,21 +282,21 @@
     <Intensity Adjust="False">100</Intensity>
    </Button>
    <Button Caption="BLUE" ID="13" Icon="">
-    <WindowState Visible="True" X="85" Y="0" Width="85" Height="55"/>
+    <WindowState Visible="False" X="170" Y="0" Width="85" Height="55"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
      <BackgroundColor>Default</BackgroundColor>
      <BackgroundImage>None</BackgroundImage>
-     <Font>Seven Segment,18,-1,5,50,0,0,0,0,0,Regular</Font>
+     <Font>Seven Segment,18,-1,5,50,0,0,0,0,0</Font>
     </Appearance>
     <Function ID="5"/>
     <Action>Toggle</Action>
     <Key>B</Key>
     <Intensity Adjust="False">100</Intensity>
    </Button>
-   <Slider Caption="Global Yellow" ID="7" WidgetStyle="Slider" InvertedAppearance="false">
-    <WindowState Visible="True" X="255" Y="55" Width="85" Height="200"/>
+   <Slider Caption="Yellow" ID="7" WidgetStyle="Slider" InvertedAppearance="false">
+    <WindowState Visible="False" X="255" Y="55" Width="85" Height="200"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>4278190080</ForegroundColor>
@@ -317,8 +317,8 @@
      <Function>4294967295</Function>
     </Playback>
    </Slider>
-   <Slider Caption="Global White" ID="9" WidgetStyle="Slider" InvertedAppearance="false">
-    <WindowState Visible="True" X="340" Y="55" Width="85" Height="200"/>
+   <Slider Caption="White" ID="9" WidgetStyle="Slider" InvertedAppearance="false">
+    <WindowState Visible="False" X="340" Y="55" Width="85" Height="200"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>4278190080</ForegroundColor>
@@ -339,8 +339,8 @@
      <Function>4294967295</Function>
     </Playback>
    </Slider>
-   <Slider Caption="Global Purple" ID="8" WidgetStyle="Slider" InvertedAppearance="false">
-    <WindowState Visible="True" X="425" Y="55" Width="85" Height="200"/>
+   <Slider Caption="Purple" ID="8" WidgetStyle="Slider" InvertedAppearance="false">
+    <WindowState Visible="False" X="425" Y="55" Width="85" Height="200"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>4278190080</ForegroundColor>
@@ -356,6 +356,44 @@
      <Channel Fixture="4">5</Channel>
      <Channel Fixture="5">5</Channel>
      <Channel Fixture="7">5</Channel>
+    </Level>
+    <Playback>
+     <Function>4294967295</Function>
+    </Playback>
+   </Slider>
+   <Slider Caption="Front White" ID="0" WidgetStyle="Slider" InvertedAppearance="false">
+    <WindowState Visible="False" X="545" Y="55" Width="95" Height="200"/>
+    <Appearance>
+     <FrameStyle>Sunken</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>4294967295</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
+    <Level LowLimit="0" HighLimit="255" Value="0">
+     <Channel Fixture="2">4</Channel>
+     <Channel Fixture="3">4</Channel>
+     <Channel Fixture="4">4</Channel>
+     <Channel Fixture="5">4</Channel>
+     <Channel Fixture="7">4</Channel>
+    </Level>
+    <Playback>
+     <Function>4294967295</Function>
+    </Playback>
+   </Slider>
+   <Slider Caption="Back Blue" ID="10" WidgetStyle="Slider" InvertedAppearance="false">
+    <WindowState Visible="False" X="640" Y="55" Width="95" Height="200"/>
+    <Appearance>
+     <FrameStyle>Sunken</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>4294967295</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
+    <Level LowLimit="0" HighLimit="255" Value="0">
+     <Channel Fixture="0">2</Channel>
     </Level>
     <Playback>
      <Function>4294967295</Function>
