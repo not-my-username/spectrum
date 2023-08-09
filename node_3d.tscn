@@ -18,7 +18,6 @@
 
 [sub_resource type="Environment" id="Environment_pfmir"]
 background_mode = 1
-sdfgi_enabled = true
 volumetric_fog_enabled = true
 volumetric_fog_density = 0.0341
 adjustment_enabled = true
