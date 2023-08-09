@@ -1,5 +1,8 @@
 res://default_bus_layout.tres
+<<<<<<< Updated upstream
 res://node_3d.tscn
 res://show_spectrum.tscn
 res://Light.tscn
 res://node_2d.tscn
+=======
+>>>>>>> Stashed changes
